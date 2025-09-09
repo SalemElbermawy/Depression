@@ -110,9 +110,9 @@ st.markdown("""
 - 15-19 👉 Moderately Severe Depression  
 - 20-27 👉 Severe Depression  
 """)
-
+st.write("🧾 Result")
 with st.spinner("WAIT >>>>>>"):
-    st.write("🧾 Result")
+    
     ob=Data(q1=qs1,q2=qs2,q3=qs3,q4=qs4,q5=qs5,q6=qs6,q7=qs7,q8=qs8,q9=qs9,age=age,gen=gendar)
     ob.special_evaluate()
     st.write(ob.present_test())
