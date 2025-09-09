@@ -111,12 +111,13 @@ st.markdown("""
 - 20-27 👉 Severe Depression  
 """)
 
-st.write("🧾 Result")
-ob=Data(q1=qs1,q2=qs2,q3=qs3,q4=qs4,q5=qs5,q6=qs6,q7=qs7,q8=qs8,q9=qs9,age=age,gen=gendar)
-ob.special_evaluate()
-st.write(ob.present_test())
+with st.spinner("WAIT >>>>>>"):
+    st.write("🧾 Result")
+    ob=Data(q1=qs1,q2=qs2,q3=qs3,q4=qs4,q5=qs5,q6=qs6,q7=qs7,q8=qs8,q9=qs9,age=age,gen=gendar)
+    ob.special_evaluate()
+    st.write(ob.present_test())
 
-st.write("📈 Accuracy of the model")
-st.write(ob.local_evaluate())
-st.plotly_chart(ob.plot_predictions())
-st.plotly_chart(ob.plot_accuracy())
+    st.write("📈 Accuracy of the model")
+    st.write(ob.local_evaluate())
+    st.plotly_chart(ob.plot_predictions())
+    st.plotly_chart(ob.plot_accuracy())
