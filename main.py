@@ -2,7 +2,6 @@ import streamlit as st
 import numpy as np    
 from data_1 import Data
 
-# ===== CSS للتنسيق ولون النص حسب الوضع =====
 page_bg = """
 <style>
 .stApp {
